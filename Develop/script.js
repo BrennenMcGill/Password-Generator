@@ -7,16 +7,19 @@ function gitRandomArray(min, max) {
 }
 
 var generatePassword = function() {
+  do var passwordLength = parseInt(window.prompt("How many characters do you want you password to be between 8 and 128?"));
+  while (passwordLength < 8 || passwordLength > 128);
+  
   do {
-  var passwordLength = parseInt(window.prompt("How many characters do you want you passord to be between 8 and 128?"));
-  }while (passwordLength < 8 || passwordLength > 128);
+  window.alert("Please select one of the following");
 
   var passwordCase = window.confirm("Do you want to have an upper case letter in your password?");
 
   var passwordNumeric = window.confirm("Do you want to have numbers in your password?");
 
   var passwordSpecialChar = window.confirm("Do you want to have any special charaters in your password?");
-
+  } while (passwordCase === false && passwordNumeric === false && passwordSpecialChar === false);
+  
   var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
   var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -29,8 +32,6 @@ var generatePassword = function() {
 
   for (var i = 0; i < passwordLength; i++){
      console.log(randomShit[gitRandomArray(0,3)]);
-    
-    
     
   }
 
