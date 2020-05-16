@@ -13,12 +13,14 @@ var generatePassword = function() {
   do {
   window.alert("Please select one of the following");
 
-  var passwordCase = window.confirm("Do you want to have an upper case letter in your password?");
+  var passwordUpCase = window.confirm("Do you want to have an upper case letter in your password?");
+
+  var passwordLowCase = window.confirm("Do you want to have a lower case letter in your password?");
 
   var passwordNumeric = window.confirm("Do you want to have numbers in your password?");
 
   var passwordSpecialChar = window.confirm("Do you want to have any special charaters in your password?");
-  } while (passwordCase === false && passwordNumeric === false && passwordSpecialChar === false);
+  } while (passwordUpCase === false && passwordNumeric === false && passwordSpecialChar === false && passwordLowCase === false);
   
   var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
