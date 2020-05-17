@@ -61,7 +61,6 @@ function gitRandomArray(randomArray) {
   }
 
   return (theRandomChar);
-
 }
 
 
