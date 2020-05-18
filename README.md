@@ -2,7 +2,7 @@
 This website allows you to put is criteria and get a password basic on said criteria
 
 ## Link to site
-[link](https://brennenmcgill.github.io/Password-Generator/)
+[link](https://brennenmcgill.github.io/Password-Generator/Develop)
 
 ## Technologies 
 * CSS
