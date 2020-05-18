@@ -53,17 +53,17 @@ function gitRandomArray(randomArray) {
   return randomArray[ Math.floor(Math.random() * (randomArray.length))]; //The maximum is inclusive and the minimum is inclusive 
 }
 
-var passwordArrray = [];
+var password = "";
 
   for (var i = 0; i < passwordLength; i++){
     var theRandomArray = gitRandomArray(randomShit);
     var theRandomChar = gitRandomArray(theRandomArray);
 
     console.log(theRandomChar);
-    passwordArrray.push(theRandomChar);
+    password += theRandomChar;
   }
 
-  return (passwordArrray.join(''));
+  return password;
 }
 
 
